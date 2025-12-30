@@ -1,0 +1,16 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+#reader {
+  width: 300px;
+  margin: auto;
+}
+
+#result {
+  background: white;
+  padding: 15px;
+  margin-top: 20px;
+}
