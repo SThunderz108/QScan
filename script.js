@@ -65,3 +65,16 @@ if (phishingRisk) {
   warnings.push("May be a phishing link");
 }
 
+function showResult(warnings) {
+  if (warnings.length === 0) {
+    output.className = "safe";
+    output.innerText += "\n\n🟢 Safe: No risks detected.";
+  } else if (warnings.length <= 2) {
+    output.className = "warning";
+    output.innerText += "\n\n🟡 Be Careful:\n- " + warnings.join("\n- ");
+  } else {
+    output.className = "danger";
+    output.innerText += "\n\n🔴 Dangerous:\n- " + warnings.join("\n- ");
+  }
+}
+
