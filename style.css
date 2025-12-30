@@ -14,3 +14,19 @@ body {
   padding: 15px;
   margin-top: 20px;
 }
+
+.safe {
+  color: green;
+  font-weight: bold;
+}
+
+.warning {
+  color: orange;
+  font-weight: bold;
+}
+
+.danger {
+  color: red;
+  font-weight: bold;
+}
+
